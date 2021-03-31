@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why am I pantheist?"
+title:  "Why I am a Pantheist?"
 date:   2021-03-31 18:33:21 +0200
 categories: jekyll update
 ---
@@ -8,9 +8,11 @@ I feel weird writing this post, becuase for many years I was atheist. Back then 
 
 In that sense I agree with atheism – this kind of God doesn't exist. But it's not only concept of God. It's most popular, but there exist many more of them. I think many atheists don't know that theist God (one descraibed above) is just one among many others. Pantheism for example is such belief and contrart yo theism, it doesn't have many strong arguments against it.
 
-Most famous proponent of pantheism was Albert Einstein. In his youth he read works by Baruch Spinoza, who devised philosophical system based on idea of pantheistic God. Einstein believed in Spinozas ideas, but approached them in more modern, scientific way. Here are two quotes by Einstein that confirm that:
+Most famous proponent of pantheism was Albert Einstein. In his youth he read works by Baruch Spinoza, who devised philosophical system based on idea of pantheistic God. Einstein believed in Spinozas ideas, but approached them in more modern, scientific way. Here is quote by Einstein that confirm this view:
 
 > I believe in Spinoza's God, who reveals himself in the harmony of all that exists, not in a God who concerns himself with the fate and the doings of mankind.
+
+And another quote:
 
 >This firm belief, a belief bound up with a deep feeling, in a superior mind that reveals itself in the world of experience, represents my conception of God. In common parlance this may be described as "pantheistic".
 
