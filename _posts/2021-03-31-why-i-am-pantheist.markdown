@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I am a Pantheist?"
 date:   2021-03-31 18:33:21 +0200
-categories: jekyll update
+categories: pantheism
 ---
 I feel weird writing this post, becuase for many years I was atheist. Back then I wouldn't believe that I will go back to believing in God. But here I am – I'm believer. But not believer in personal God, who thinks, is torn by emotions, needs people to worship him and who judges every human action. Frankly I consider this kind of God as childisch construct of human mind.
 
