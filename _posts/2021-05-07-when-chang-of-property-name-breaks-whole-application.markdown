@@ -14,13 +14,13 @@ public async Task<ActionResult<int>> Create(CreateTodoItemCommand command)
 }
 {% endhighlight %}
 
-Using `CreateTodoItemCommand` as input parameter type is convenient. You don't have to create another class `CreateTodoItem` and map properties between those two. But I think it's convenient only if nothing changes. If for example you change one of property names in `CreateTodoItemCommand` you can cause yourself big problem if you are not cautious.
+Using `CreateTodoItemCommand` as input parameter type is convenient. You don't have to create another class, say `CreateTodoItemRequest`, and map properties between the two. But I think it's convenient only if nothing changes. For example, if you change one of property name in `CreateTodoItemCommand` you can cause yourself big problem, if you are not cautious.
 
-Imagine that API and Web UI projects are developed separately. Developer refactored his code and in the process he changed name of one of properties. Let's say he changed `Done` property to `IsDone`. Because this class is used as input parameter type in API method, it changes API design. It is small and unimportant change from API code point of view. But it's important change for Web UI project. But developer hasn't noticed that he changed API design. He ran all tests in the solution - all of them passed, because he hasn't introduced any bug in the code. He just changed API design, which can cause big problems, even break whole application if it impacts crucial API endpoint.
+Imagine that API and Web UI projects are developed separately. Developer refactored his code and in the process he changed name of one of properties. Let's say he changed `Done` property to `IsDone`. Because this class is used as input parameter type in API method, it changes API design. It is small and unimportant change from the point of view of the API code. But it's important change from Web UI project standpoint. But developer hasn't noticed that. He ran all tests in the solution - all of them passed, because he hasn't introduced any bug in the API code. Situation like this could even break whole application, if it would impact critical endpoint.
 
-I don't like if smallest change of names can cause big problems, because for one it's risky but also it installs atmosphere of fear. If smallest change can have such big, negactive impact then it's best to keep everything as it is, even if it's badly designed or implemented. I find that strong incentives to maintain status quo are one of the biggest enemies of code quality.
+I don't feel comfortable if smallest change of property name can cause big problem. It is risky and installs atmosphere of fear. If minor change of property name can have such a big, negactive impact then it's best to keep everything as it is, even if it's badly designed or implemented. I find that strong incentives to maintain status quo are one of the biggest enemies of code quality.
 
-Other source of potential bugs from changing property names are mapping libraries. Let's say that `CreatePortfolioPositionCommand` has same properties as `PortfolioPosition`. So you can just implement mapping of those two class like this in Automapper:
+Other source of potential bugs from changing property names are often mapping libraries. Let's say that `CreatePortfolioPositionCommand` has same properties as `PortfolioPosition`. So you can just implement mapping of those two class like this in Automapper:
 
 {% highlight csharp %}
 CreateMap<CreatePositionCommand, PortfolioPosition>();
@@ -46,7 +46,7 @@ It's much better to implement constructor in `PortfolioPosition` class. Then you
 var portfolioPosition = new PortfolioPosition(command.Name, command.Request);
 {% endhighlight %}
 
-Alright, but what if you have to create class and fill all of it's 50 properties. Using constructor in that case would be messy. But you can always implement your own extension method that will do the mapping. For case above code would look like this:
+Alright, but what if you have to create class and fill all of it's 50 properties? Using constructor in that case would be messy. In those special situations you can always implement your own extension method that will do the mapping. For case described above code would look like this:
 
 {% highlight csharp %}
 public static class PortfolioPositionMappingExtensions
