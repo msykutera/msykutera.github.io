@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Immutable command and queries"
+title:  "Immutable commands and queries"
 date:   2021-04-21 18:33:21 +0200
 categories: code
 ---
@@ -51,7 +51,7 @@ public class GetProductDetailsDto
 }
 {% endhighlight %}
 
-In my code is immutable object. Code looks like this:
+In my code it is implemented as immutable object, like this:
 
 {% highlight csharp %}
 [ImmutableObject(true)]
