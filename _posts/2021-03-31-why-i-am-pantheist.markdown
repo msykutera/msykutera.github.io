@@ -29,5 +29,3 @@ After galaxy, next step is to consider whole Universe. Is it only one object of 
 Many people, especially scientits, belive that our Universe is whole reality. That there is nothing else. Reason for that there is no direct data that would confirm existence of reality outside of Universe. I think they are making mistake of applying scientific approach to what is out of reach of perception and measurement. It's realm of philosophy and one have to apply to it philosophical way of thinking. Because of that one shouldn't reject existence of reality outside of Universe, just because there is no data to confirm it.
 
 Our solar system is so big that we cannot comprehend it. But there is from 100 to 400 billion stars in our galaxy and there are from 200 billion to 2 trillion galaxies in our Universe. Reality that we can observe is unbelivably grand. But it's small and unimportant part of something bigger.
-
-Michał Sykutera
